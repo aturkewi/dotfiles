@@ -1,0 +1,43 @@
+# Environment
+# =====================
+
+# GIT_MERGE_AUTO_EDIT
+# This variable configures git to not require a message when you merge.
+export GIT_MERGE_AUTOEDIT='no'
+
+# Editors
+# Tells your shell that when a program requires various editors, use sublime.
+# The -w flag tells your shell to wait until sublime exits
+export VISUAL="atom -w"
+export SVN_EDITOR="atom -w"
+export GIT_EDITOR="atom -w"
+export EDITOR="atom -w"
+
+export USR_PATHS="/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin"
+
+export PATH="$USR_PATHS:$PATH"
+
+# Postgres
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+
+# SQlite
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
+# OpenSSL
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# Mongo
+export MONGO_PATH=/usr/local/mongodb
+export PATH=$PATH:$MONGO_PATH/bin
+
+eval "$(direnv hook bash)"
+
+# NVM - Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Kiex - Elixir Version Manager
+[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
+
+# RVM - Ruby Version Manager
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

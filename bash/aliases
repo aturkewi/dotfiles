@@ -1,0 +1,39 @@
+# Aliases
+# =====================
+
+# LS
+alias l='ls -lah'
+
+# Git
+alias gcl="git clone"
+alias gst="git status"
+alias gl="git pull"
+alias gp="git push"
+alias gd="git diff | mate"
+alias gc="git commit -v"
+alias gca="git commit -v -a"
+alias gb="git branch"
+alias gba="git branch -a"
+alias gcam="git commit -am"
+alias gcm="git commit -m"
+alias gcb="git checkout -b"
+alias gad="git add ."
+alias lg1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(black)%s%C(reset) %C(red)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+alias lg2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias gprune="git remote prune origin"
+
+# Shortcuts
+alias instructor="cd /Users/avidor/Development/code/instructor"
+alias manager="cd /Users/avidor/Development/code/learn-manager"
+alias labs-team="cd /Users/avidor/Development/code/labs-team"
+alias ironboard="cd /Users/avidor/Development/code/labs-team/ironboard"
+alias desktop="cd /Users/$USER/Desktop/$@"
+
+# Misc.
+alias pys="python -m SimpleHTTPServer"
+alias bash-p="atom ~/.bash_profile"
+alias iron-reload="rake db:drop && rake ironboard:db_restore_lite"
+alias reaload!="source ~/.bash_profile"
+
+# Good feels
+alias support="cowsay you are doing awesome"
