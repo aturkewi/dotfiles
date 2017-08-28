@@ -33,7 +33,7 @@ alias desktop="cd /Users/$USER/Desktop/$@"
 alias pys="python -m SimpleHTTPServer"
 alias bash-p="atom ~/.bash_profile"
 alias iron-reload="rake db:drop && rake ironboard:db_restore_lite"
-alias reaload!="source ~/.bash_profile"
+alias reload!="source ~/.bash_profile"
 
 # Good feels
 alias support="cowsay you are doing awesome"
