@@ -55,6 +55,14 @@ function atom-ide {
   apm enable learn-ide-notifications
 }
 
+function atom-vim-on {
+  apm enable vim-mode-plus
+}
+
+function atom-vim-off {
+  apm disable vim-mode-plus
+}
+
 function grad {
   /usr/bin/open -a "/Applications/Google Chrome.app" "https://learn.co/graduation/student-dashboard/$1"
 }
