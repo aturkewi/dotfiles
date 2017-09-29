@@ -72,5 +72,5 @@ function imp {
 }
 
 function ngrok {
-  ~/ngrok $1 $2
+  ~/Development/ngrok $1 $2
 }
