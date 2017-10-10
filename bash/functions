@@ -40,19 +40,13 @@ function check-port {
 function atom-sym {
   rm /usr/local/bin/atom
   ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
-  apm disable learn-ide
-  apm disable learn-ide-tree
-  apm disable learn-ide-notifications
   apm enable tree-view
 }
 
 function atom-ide {
   rm /usr/local/bin/atom
-  ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
+  ln -s /Applications/Learn IDE 3.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
   apm disable tree-view
-  apm enable learn-ide
-  apm enable learn-ide-tree
-  apm enable learn-ide-notifications
 }
 
 function atom-vim-on {
