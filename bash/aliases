@@ -31,10 +31,13 @@ alias desktop="cd /Users/$USER/Desktop/$@"
 
 # Misc.
 alias pys="python -m SimpleHTTPServer"
-alias bash-p="atom ~/Development/dotfiles/."
+alias bash-p="cd ~/Development/dotfiles/. && atom ."
 alias iron-reload="rake db:drop && rake ironboard:db_restore_lite"
 alias reload!="source ~/.bash_profile"
 alias be="bundle exec"
+
+# Deploying
+alias cssh='i2cssh -c'
 
 # Good feels
 alias support="cowsay you are doing awesome"
