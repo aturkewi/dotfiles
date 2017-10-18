@@ -41,6 +41,7 @@ alias cssh='i2cssh -c'
 
 # Docker
 alias dc='docker-compose'
+alias ds='docker-sync'
 
 # Good feels
 alias support="cowsay you are doing awesome"
