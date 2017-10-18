@@ -39,5 +39,8 @@ alias be="bundle exec"
 # Deploying
 alias cssh='i2cssh -c'
 
+# Docker
+alias dc='docker-compose'
+
 # Good feels
 alias support="cowsay you are doing awesome"
