@@ -32,6 +32,18 @@ function psg {
   ps aux | grep "[$FIRST]$REST"
 }
 
+function start-local-services {
+  brew services start rabbitmq
+  brew services start redis
+  brew services start postgresql
+}
+
+function stop-local-services {
+  brew services stop rabbitmq
+  brew services stop redis
+  brew services stop postgresql
+}
+
 function check-port {
   port=$1;
   lsof -i tcp:$1;
