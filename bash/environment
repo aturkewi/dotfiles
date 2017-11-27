@@ -30,6 +30,8 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export MONGO_PATH=/usr/local/mongodb
 export PATH=$PATH:$MONGO_PATH/bin
 
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+
 eval "$(direnv hook bash)"
 
 # NVM - Node Version Manager
