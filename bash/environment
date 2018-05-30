@@ -33,6 +33,8 @@ export PATH=$PATH:$MONGO_PATH/bin
 eval "$(direnv hook bash)"
 
 # Install Python version manager
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # NVM - Node Version Manager
