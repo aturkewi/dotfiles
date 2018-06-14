@@ -32,16 +32,17 @@ alias desktop="cd /Users/$USER/Desktop/$@"
 # Misc.
 alias pys="python -m SimpleHTTPServer"
 alias bash-p="cd ~/Development/dotfiles/. && atom ."
-alias iron-reload="rake db:drop && rake ironboard:db_restore_lite"
 alias reload!="source ~/.bash_profile"
 alias be="bundle exec"
+
+# Rails
+alias rdbm="rake db:migrate"
 
 # Deploying
 alias cssh='i2cssh -c'
 
 # Docker
 alias dc='docker-compose'
-alias ds='docker-sync'
 
 # Good feels
 alias support="cowsay you are doing awesome"
