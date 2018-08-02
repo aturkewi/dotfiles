@@ -35,6 +35,9 @@ alias bash-p="cd ~/Development/dotfiles/. && atom ."
 alias reload!="source ~/.bash_profile"
 alias be="bundle exec"
 
+# Direnv
+alias dea="direnv allow ."
+
 # Rails
 alias rdbm="rake db:migrate"
 
