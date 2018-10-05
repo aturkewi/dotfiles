@@ -53,6 +53,7 @@ alias get-aws-credentials='f(){ cmd="docker run -it --rm -v ~/.aws:/package/.aws
 # Phoenix
 alias pserver='iex -S mix phx.server'
 alias ism='iex -S mix'
+alias kil-bild='rm -rf _build/'
 
 # Good feels
 alias support="cowsay you are doing awesome"
