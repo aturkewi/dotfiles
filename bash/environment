@@ -32,6 +32,9 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export MONGO_PATH=/usr/local/mongodb
 export PATH=$PATH:$MONGO_PATH/bin
 
+# Elixir
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 eval "$(direnv hook bash)"
 
 # Install Python version manager
