@@ -77,6 +77,10 @@ function imp {
   /usr/bin/open -a "/Applications/Google Chrome.app" "https://learn.co/admin/impersonations/users/$1"
 }
 
+function jira {
+  /usr/bin/open -a "/Applications/Google Chrome.app" "https://flatiron.atlassian.net/browse/$1"
+}
+
 function ngrok {
   ~/Development/ngrok $1 $2
 }
