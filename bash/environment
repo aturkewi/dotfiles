@@ -7,6 +7,11 @@ export GIT_MERGE_AUTOEDIT='no'
 
 export GPG_TTY=$(tty)
 
+# Need for git autocomplete
+# If not installed, install with brew install git bash-completion
+# Source: https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 # Editors
 # Tells your shell that when a program requires various editors, use sublime.
 # The -w flag tells your shell to wait until sublime exits
