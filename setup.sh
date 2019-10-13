@@ -10,5 +10,8 @@ brew install direnv
 brew install gnupg
 brew install hub
 
-# create dir for screenshots
+SCREENSHOT_DIR=~/Documents/Screenshots
+# create dir for screenshots if doesn't exist
+mkdir -p $SCREENSHOT_DIR
 # set dir for screenshots
+defaults write com.apple.screencapture location $SCREENSHOT_DIR
