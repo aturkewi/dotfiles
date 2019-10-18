@@ -24,10 +24,10 @@ alias gprune="git remote prune origin"
 alias dmb="git branch --merged | egrep -v '(^\*|master|dev)' | xargs git branch -d"
 
 # Shortcuts
-alias instructor="cd /Users/avidor/Development/code/instructor"
-alias manager="cd /Users/avidor/Development/code/learn-manager"
-alias labs-team="cd /Users/avidor/Development/code/labs-team"
-alias ironboard="cd /Users/avidor/Development/code/labs-team/ironboard"
+alias instructor="cd ~/Development/code/instructor"
+alias manager="cd ~/Development/code/learn-manager"
+alias labs-team="cd ~/Development/code/labs-team"
+alias ironboard="cd ~/Development/code/labs-team/ironboard"
 alias desktop="cd /Users/$USER/Desktop/$@"
 
 # Misc.
