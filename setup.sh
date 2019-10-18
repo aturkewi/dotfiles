@@ -1,8 +1,17 @@
 #!/usr/bin/env bash
 
-# check if each tool is installed _before_ installing it
-xcode-select --install
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if xcode-select -p > /dev/null 2>&1; then
+  echo "Xcode tools alreay installed!"
+else
+  echo "Installing xcode-select..."
+  xcode-select --install
+fi
+if brew --version > /dev/null 2>&1; then
+  echo "Hombrew is already installed!"
+else
+  echo "Installing homebrew..."
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 brew install git bash-completion
 brew install asdf
@@ -11,7 +20,6 @@ brew install gnupg
 brew install hub
 
 SCREENSHOT_DIR=~/Documents/Screenshots
-# create dir for screenshots if doesn't exist
 mkdir -p $SCREENSHOT_DIR
 # set dir for screenshots
 defaults write com.apple.screencapture location $SCREENSHOT_DIR
