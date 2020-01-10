@@ -13,11 +13,11 @@ export GPG_TTY=$(tty)
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # Editors
-# The -w flag tells your shell to wait until sublime exits
-export VISUAL="vim -w"
-export SVN_EDITOR="vim -w"
-export GIT_EDITOR="vim -w"
-export EDITOR="vim -w"
+# if switching back to atom, input `atom -w`
+export VISUAL="vim"
+export SVN_EDITOR="vim"
+export GIT_EDITOR="vim"
+export EDITOR="vim"
 
 export USR_PATHS="/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin"
 
