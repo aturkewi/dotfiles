@@ -84,3 +84,7 @@ function jira {
 function ngrok {
   ~/Development/ngrok $1 $2
 }
+
+function branch-name {
+  git branch | sed -n -e 's/^\* \(.*\)/\1/p'
+}
