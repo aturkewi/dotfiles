@@ -28,6 +28,7 @@ alias instructor="cd ~/Development/code/instructor"
 alias manager="cd ~/Development/code/learn-manager"
 alias labs-team="cd ~/Development/code/labs-team"
 alias ironboard="cd ~/Development/code/labs-team/ironboard"
+alias registrar="cd ~/Development/code/labs-team/registrar_umbrella"
 alias desktop="cd /Users/$USER/Desktop/$@"
 
 # Misc.
