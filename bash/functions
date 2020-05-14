@@ -80,3 +80,7 @@ function imp {
 function jira {
   /usr/bin/open -a "/Applications/Google Chrome.app" "https://flatiron.atlassian.net/browse/$1"
 }
+
+function branch-name {
+  git branch | sed -n -e 's/^\* \(.*\)/\1/p'
+}

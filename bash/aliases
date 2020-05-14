@@ -28,6 +28,7 @@ alias instructor="cd ~/Development/code/instructor"
 alias manager="cd ~/Development/code/learn-manager"
 alias labs-team="cd ~/Development/code/labs-team"
 alias ironboard="cd ~/Development/code/labs-team/ironboard"
+alias registrar="cd ~/Development/code/labs-team/registrar_umbrella"
 alias desktop="cd /Users/$USER/Desktop/$@"
 
 # Misc.
@@ -55,7 +56,6 @@ alias get-aws-credentials='f(){ cmd="docker run -it --rm -v ~/.aws:/package/.aws
 alias pserver='iex -S mix phx.server'
 alias ism='iex -S mix'
 alias kil-bild='rm -rf _build/'
-alias micks='mix'
 
 # Good feels
 alias support="cowsay you are doing awesome"
