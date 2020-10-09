@@ -15,6 +15,7 @@ fi
 
 brew install git bash-completion
 brew install asdf
+brew install pyenv
 brew install direnv
 brew install gnupg
 brew install hub
