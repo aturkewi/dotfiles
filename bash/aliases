@@ -59,3 +59,7 @@ alias kil-bild='rm -rf _build/'
 
 # Good feels
 alias support="cowsay you are doing awesome"
+
+
+alias aws-profile-qa="export AWS_DEFAULT_PROFILE=qa; export AWS_PROFILE=qa"
+alias aws-profile-prod="export AWS_DEFAULT_PROFILE=prod; export AWS_PROFILE=prod"
