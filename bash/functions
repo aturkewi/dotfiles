@@ -84,3 +84,5 @@ function jira {
 function branch-name {
   git branch | sed -n -e 's/^\* \(.*\)/\1/p'
 }
+
+touch2() { mkdir -p "$(dirname "$1")" && touch "$1" ; }
