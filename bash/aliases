@@ -48,7 +48,7 @@ alias cssh='i2cssh -c'
 
 # Docker
 alias dc='docker-compose'
-
+alias docker-compose='docker compose'
 
 # Phoenix
 alias pserver='iex -S mix phx.server'
