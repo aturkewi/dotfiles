@@ -29,6 +29,9 @@ export PATH="$USR_PATHS:$PATH"
 # Postgres
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # SQlite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
