@@ -33,7 +33,7 @@ alias desktop="cd /Users/$USER/Desktop/$@"
 
 # Misc.
 alias pys="python -m SimpleHTTPServer"
-alias bash-p="cd ~/Development/dotfiles/. && atom ."
+alias bash-p="cd ~/Development/dotfiles/. && code ."
 alias reload!="source ~/.bash_profile"
 alias be="bundle exec"
 

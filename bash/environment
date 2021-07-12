@@ -17,10 +17,10 @@ export GPG_TTY=$(tty)
 
 # Editors
 # if switching back to atom, input `atom -w`
-export VISUAL="atom -w"
-export SVN_EDITOR="atom -w"
-export GIT_EDITOR="atom -w"
-export EDITOR="atom -w"
+export VISUAL="code -w"
+export SVN_EDITOR="code -w"
+export GIT_EDITOR="code -w"
+export EDITOR="code -w"
 
 export USR_PATHS="/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin"
 
