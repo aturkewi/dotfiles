@@ -49,38 +49,6 @@ function check-port {
   lsof -i tcp:$1;
 }
 
-function atom-sym {
-  rm /usr/local/bin/atom
-  ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
-  apm enable tree-view
-}
-
-function atom-ide {
-  rm /usr/local/bin/atom
-  ln -s /Applications/Learn IDE 3.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
-  apm disable tree-view
-}
-
-function atom-vim-on {
-  apm enable vim-mode-plus
-}
-
-function atom-vim-off {
-  apm disable vim-mode-plus
-}
-
-function grad {
-  /usr/bin/open -a "/Applications/Google Chrome.app" "https://learn.co/graduation/student-dashboard/$1"
-}
-
-function imp {
-  /usr/bin/open -a "/Applications/Google Chrome.app" "https://learn.co/admin/impersonations/users/$1"
-}
-
-function jira {
-  /usr/bin/open -a "/Applications/Google Chrome.app" "https://flatiron.atlassian.net/browse/$1"
-}
-
 function branch-name {
   git branch | sed -n -e 's/^\* \(.*\)/\1/p'
 }
