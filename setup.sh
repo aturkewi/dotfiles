@@ -13,7 +13,8 @@ else
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-brew install git bash-completion
+brew install git
+brew install bash-completion
 brew install asdf
 brew install pyenv
 brew install direnv
