@@ -71,7 +71,7 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # Rover
 if test -f ~/.rover/env; then
-  source "~/.rover/env"
+  source ~/.rover/env
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
