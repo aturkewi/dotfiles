@@ -82,4 +82,4 @@ if [ -f '/Users/avidor/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/a
 
 # RVM - Ruby Version Manager
 # ASDF seems to have issues with bundler :(
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
