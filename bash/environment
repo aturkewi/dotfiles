@@ -66,8 +66,8 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # ASDF Version manager
-. $(brew --prefix asdf)/asdf.sh
-. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+# $(brew --prefix asdf)/libexec/asdf.sh
+/opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # Rover
 if test -f ~/.rover/env; then
