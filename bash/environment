@@ -47,14 +47,6 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 eval "$(direnv hook bash)"
 
-# Install Python version manager if pyenv is installed
-if command -v pyenv
-then
-  export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init -)"
-fi
-
 # NVM - Node Version Manager
 # Managing node version with asdf
 # export NVM_DIR="$HOME/.nvm"
