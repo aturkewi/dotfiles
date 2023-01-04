@@ -14,6 +14,15 @@ else
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+if [ -d ~/.oh-my-zsh ]; then
+	echo "oh-my-zsh is installed"
+ else
+ 	echo "installing oh-my-zsh..."
+  cd ~
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  cd -
+fi
+
 # Add Oh My ZSH install
 
 brew install git
