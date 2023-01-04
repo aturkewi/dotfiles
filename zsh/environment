@@ -29,5 +29,5 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # To get virtualenv working with asdf
 # source https://abbasegbeyemi.me/blog/python-asdf-virtualenv
-export WORKON_HOME=~/.virtualenvs
-. $(asdf where python)/bin/virtualenvwrapper.sh
+# export WORKON_HOME=~/.virtualenvs
+# . $(asdf where python)/bin/virtualenvwrapper.sh
