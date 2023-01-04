@@ -1,0 +1,28 @@
+# Editors
+# if switching back to atom, input `atom -w`
+export VISUAL="code -w"
+export SVN_EDITOR="code -w"
+export GIT_EDITOR="code -w"
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR="code -w"
+fi
+
+# GIT_MERGE_AUTO_EDIT
+# This variable configures git to not require a message when you merge.
+export GIT_MERGE_AUTOEDIT='no'
+
+export GPG_TTY=$(tty)
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Add `code <dir>` to path
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# OpenSSL
+# This may have been needed for some old Elixir stuff. Commenting it out for now
+# export PATH="/usr/local/opt/openssl/bin:$PATH"
