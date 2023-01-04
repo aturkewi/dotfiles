@@ -3,6 +3,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 source ~/.zsh/oh-my-zsh
 source ~/.zsh/environment
+source ~/.zsh/functions.sh
 
 # User configuration
 

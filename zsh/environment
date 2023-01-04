@@ -26,3 +26,8 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # OpenSSL
 # This may have been needed for some old Elixir stuff. Commenting it out for now
 # export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# To get virtualenv working with asdf
+# source https://abbasegbeyemi.me/blog/python-asdf-virtualenv
+export WORKON_HOME=~/.virtualenvs
+. $(asdf where python)/bin/virtualenvwrapper.sh
