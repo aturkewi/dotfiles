@@ -65,6 +65,3 @@ HIST_STAMPS="yyyy/mm/dd"
 plugins=(git asdf)
 
 source $ZSH/oh-my-zsh.sh
-
-
-
