@@ -1,1 +1,1 @@
-alias dotfiles="cd ~/Development/dotfiles"
+alias dotfiles="cd ~/Development/code/dotfiles && code ."
