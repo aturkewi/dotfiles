@@ -1,6 +1,10 @@
 # Add homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Allow for shell completion
+# https://docs.brew.sh/Shell-Completion
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
 source ~/.zsh/oh-my-zsh
 source ~/.zsh/environment
 source ~/.zsh/functions.sh
