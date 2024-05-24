@@ -8,7 +8,7 @@ export GIT_EDITOR="code -w"
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR="code"
+  export EDITOR="code -w"
 fi
 
 # GIT_MERGE_AUTO_EDIT
