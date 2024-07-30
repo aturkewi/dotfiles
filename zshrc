@@ -9,6 +9,11 @@ source ~/.zsh/oh-my-zsh
 source ~/.zsh/environment
 source ~/.zsh/functions.sh
 
+if [ -f ~/.zsh-local ]; then
+  echo "Loading local ZSH config"
+  source ~/.zsh-local
+fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
