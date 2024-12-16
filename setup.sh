@@ -30,3 +30,6 @@ SCREENSHOT_DIR=~/Documents/Screenshots
 mkdir -p $SCREENSHOT_DIR
 # set dir for screenshots
 defaults write com.apple.screencapture location $SCREENSHOT_DIR
+
+# Install ZSH 'autoupdate' plugin
+git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/plugins/autoupdate
