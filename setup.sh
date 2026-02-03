@@ -24,7 +24,9 @@ fi
 brew install git
 brew install asdf
 brew install gnupg
-brew install hub
+
+brew install gh
+gh alias set --clobber b "browse --branch $(git rev-parse --abbrev-ref HEAD)"
 
 SCREENSHOT_DIR=~/Documents/Screenshots
 mkdir -p $SCREENSHOT_DIR
@@ -32,4 +34,4 @@ mkdir -p $SCREENSHOT_DIR
 defaults write com.apple.screencapture location $SCREENSHOT_DIR
 
 # Install ZSH 'autoupdate' plugin
-git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/plugins/autoupdate
+# git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/plugins/autoupdate
