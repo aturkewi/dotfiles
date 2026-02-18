@@ -5,7 +5,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # https://docs.brew.sh/Shell-Completion
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
-source ~/.zsh/oh-my-zsh
+if [[ ! -o interactive ]]; then
+  :
+else
+  source ~/.zsh/oh-my-zsh
+fi
 source ~/.zsh/environment
 source ~/.zsh/functions.sh
 

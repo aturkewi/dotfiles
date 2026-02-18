@@ -38,10 +38,11 @@ export PATH="$HOME/.local/bin:$PATH"
 # This may have been needed for some old Elixir stuff. Commenting it out for now
 # export PATH="/usr/local/opt/openssl/bin:$PATH"
 
-# To get virtualenv working with asdf
-# source https://abbasegbeyemi.me/blog/python-asdf-virtualenv
-# export WORKON_HOME=~/.virtualenvs
-# . $(asdf where python)/bin/virtualenvwrapper.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# append completions to fpath
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
 
 # Needed for Docker Desktop?
 FILE=/Users/avi/.docker/init-zsh.sh
@@ -52,3 +53,8 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add AWS indicator to prompt when AWS_VAULT is set
+if [[ -n $AWS_VAULT ]]; then
+  export PROMPT="(AWS) ${PROMPT}"
+fi
