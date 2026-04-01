@@ -38,9 +38,9 @@ export PATH="$HOME/.local/bin:$PATH"
 # This may have been needed for some old Elixir stuff. Commenting it out for now
 # export PATH="/usr/local/opt/openssl/bin:$PATH"
 
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # append completions to fpath
-fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+# fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
@@ -58,3 +58,12 @@ export NVM_DIR="$HOME/.nvm"
 if [[ -n $AWS_VAULT ]]; then
   export PROMPT="(AWS) ${PROMPT}"
 fi
+
+# pnpm
+export PNPM_HOME="/Users/avi/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+eval "$(mise activate zsh)"

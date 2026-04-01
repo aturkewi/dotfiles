@@ -22,7 +22,8 @@ if [ -d ~/.oh-my-zsh ]; then
 fi
 
 brew install git
-brew install asdf
+# brew install asdf
+brew install mise
 brew install gnupg
 
 brew install gh
