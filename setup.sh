@@ -22,9 +22,12 @@ if [ -d ~/.oh-my-zsh ]; then
 fi
 
 brew install git
-# brew install asdf
-brew install mise
 brew install gnupg
+
+brew install mise
+mise use -g ruby@latest
+mise use -g node@latest
+mise use -g python@latest
 
 brew install gh
 gh alias set --clobber b "browse --branch $(git rev-parse --abbrev-ref HEAD)"
