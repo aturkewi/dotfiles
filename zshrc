@@ -24,5 +24,3 @@ fi
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
-if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi

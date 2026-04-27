@@ -36,6 +36,7 @@ mise use -g ruby@latest
 npm install -g sfw
 
 # Allow agents to use multiple branhces
+# Shell setup in environment file
 brew install worktrunk
 
 # Screenshot setup
