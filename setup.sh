@@ -35,6 +35,9 @@ mise use -g ruby@latest
 
 npm install -g sfw
 
+# Allow agents to use multiple branhces
+brew install worktrunk
+
 # Screenshot setup
 SCREENSHOT_DIR=~/Documents/Screenshots
 mkdir -p $SCREENSHOT_DIR
