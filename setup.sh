@@ -32,6 +32,13 @@ mise use -g python@latest
 brew install gh
 gh alias set --clobber b "browse --branch $(git rev-parse --abbrev-ref HEAD)"
 
+npm install -g sfw
+
+# Allow agents to use multiple branhces
+# Shell setup in environment file
+brew install worktrunk
+
+# Screenshot setup
 SCREENSHOT_DIR=~/Documents/Screenshots
 mkdir -p $SCREENSHOT_DIR
 # set dir for screenshots
