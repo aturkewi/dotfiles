@@ -23,12 +23,19 @@ fi
 
 brew install git
 # brew install asdf
-brew install mise
 brew install gnupg
 
 brew install gh
 gh alias set --clobber b "browse --branch $(git rev-parse --abbrev-ref HEAD)"
 
+# Package manager setup
+brew install mise
+mise use -g node@latest
+mise use -g ruby@latest
+
+npm install -g sfw
+
+# Screenshot setup
 SCREENSHOT_DIR=~/Documents/Screenshots
 mkdir -p $SCREENSHOT_DIR
 # set dir for screenshots
