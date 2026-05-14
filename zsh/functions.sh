@@ -3,4 +3,7 @@ alias pycharm="open -na "PyCharm.app" --args "$@""
 alias pytestw="pytest --disable-warnings"
 alias reload="source ~/.zshrc"
 alias be="bundle exec"
+
+# Wrap network calls for safety
+alias pnpm="sfw pnpm"
 alias npx="sfw pnpx"
