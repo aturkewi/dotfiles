@@ -29,6 +29,9 @@ mise use -g ruby@latest
 mise use -g node@latest
 mise use -g python@latest
 
+reload
+brew install pnpm
+
 brew install gh
 gh alias set --clobber b "browse --branch $(git rev-parse --abbrev-ref HEAD)"
 
